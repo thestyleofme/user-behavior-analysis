@@ -78,6 +78,7 @@ object HotItems {
       .keyBy(_.itemId)
       .timeWindow(Time.hours(1), Time.minutes(5))
       //      .allowedLateness(Time.minutes(5))
+      //      .sideOutputLateData(new OutputTag[UserBehavior]("latenessItem"))
       .aggregate(new CountAgg(), new WindowResultAgg()) // 窗口聚合
       .keyBy(_.windowEnd) // 按照窗口分组
       .process(new TopNHotItems(5))

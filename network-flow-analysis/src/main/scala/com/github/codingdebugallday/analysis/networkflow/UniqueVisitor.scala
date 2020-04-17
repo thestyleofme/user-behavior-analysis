@@ -40,7 +40,7 @@ object UniqueVisitor {
     //    //    kafkaConsumer.setStartFromLatest()
     //    val sourceStream: DataStream[String] = env.addSource(kafkaConsumer)
     val sourceStream: DataStream[String] = env.readTextFile(
-      "E:/myGitCode/user-behavior-analysis/server_log/UserBehavior.csv")
+      "E:/myGitCode/user-behavior-analysis/server_log/UserBehavior1.csv")
     val dataStream: DataStream[UvCount] = sourceStream
       .map(data => {
         try {
