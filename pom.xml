@@ -13,6 +13,7 @@
         <module>hot-item-analysis</module>
         <module>network-flow-analysis</module>
         <module>user-behavior-common</module>
+        <module>market-analysis</module>
     </modules>
 
     <properties>
