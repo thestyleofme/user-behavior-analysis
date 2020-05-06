@@ -15,6 +15,7 @@
         <module>user-behavior-common</module>
         <module>market-analysis</module>
         <module>login-fail-detect</module>
+        <module>order-pay-detect</module>
     </modules>
 
     <properties>

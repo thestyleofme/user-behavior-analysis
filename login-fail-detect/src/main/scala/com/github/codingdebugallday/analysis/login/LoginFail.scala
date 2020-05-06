@@ -18,6 +18,7 @@ import scala.collection.mutable.ListBuffer
 /**
  * 连续登录失败检测
  */
+//noinspection DuplicatedCode
 object LoginFail {
 
   private val log = Logger(LoggerFactory.getLogger(LoginFail.getClass))

@@ -16,6 +16,7 @@ import org.slf4j.LoggerFactory
 /**
  * 连续登录失败检测
  */
+//noinspection DuplicatedCode
 object LoginFailWithCep {
 
   private val log = Logger(LoggerFactory.getLogger(LoginFailWithCep.getClass))
