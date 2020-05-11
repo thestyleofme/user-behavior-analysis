@@ -27,7 +27,7 @@ object OrderTimeout {
     env.setParallelism(1)
     val sourceStream: DataStream[String] = env.readTextFile(
       getClass.getResource("/OrderLog.csv").getPath)
-    val orderEventStream: DataStream[OrderEvent] = sourceStream
+    val orderEventStream: KeyedStream[OrderEvent, Long] = sourceStream
       .map(data => {
         try {
           val splits: Array[String] = data.split(",")
