@@ -1,4 +1,5 @@
-### flink用户行为分析示例
+### flink电商用户行为分析示例
+> 基于Flink 1.10.0实现
 #### 数据集下载
 > UserBehavior.csv
 >
